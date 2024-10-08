@@ -1,0 +1,679 @@
+
+
+.contact{ 
+    margin: 0px auto;
+    margin-bottom: 1%;
+    padding: 10px;
+    width: 75%;
+       
+}
+    input {
+         @extend .contact;
+         margin: 2%;
+         background-color:rgb(237, 242, 243)
+    }
+
+    textarea {
+         @extend .contact;
+         margin: 2%;    
+         background-color: rgb(237, 242, 243)
+         
+    }
+
+
+.send{    
+    text-transform: uppercase;
+    margin: 2%;
+    background-color: #D4AF37;
+    letter-spacing: 2px;
+
+
+    &:hover{
+         background-color: #050505;
+        color: white; 
+    } 
+}  
+
+ #desayunosHome {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;    
+    margin: 2%;
+
+    
+}
+
+.card{
+    justify-content: space-evenly;
+    margin: 2%;
+    border-left: 4px inset $primary;
+    border-bottom: 4px inset $primary;
+    border-right: 4px inset $primary;
+}
+
+.pedido{
+    text-align: center;
+}
+    .pedido p{
+        font-weight: bold;
+        color: $secondary;
+        font-size: 20px;
+        margin-top: 4%;
+
+    }
+        
+    .animacion {
+        animation: flicker 1s infinite;
+      }
+      
+      @keyframes flicker {
+        0%, 100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+
+    
+     section{
+            grid-area: descripcion;
+            text-align: center;
+
+            video{
+                width: 80%;
+                margin: 2%;
+                border: 4px inset $primary;
+            }
+
+            p{
+                width: 80%;
+                font-weight: 700;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-bottom: 10%;
+            }
+        }     
+
+#landingSomos{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 30%, 45% 10%;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "quienesSomos"
+        "footer";
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+#quienesSomos{
+    grid-area: quienesSomos;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+        #descripcion{
+            border: 4px inset $primary;
+        }
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+/*estilo para quienes somos*/
+
+
+#landingSomos{
+    display: grid;
+     grid-template-columns: 100%;
+     grid-template-rows: auto auto auto auto auto;
+     grid-template-areas: 
+         "header" 
+         "nav" 
+         "h2"
+         "contenido" 
+         "footer";
+ }
+
+ header{
+     grid-area: header;
+ }
+
+ nav{
+    grid-area: nav;
+}
+
+h2{
+    grid-area: h2;
+}
+
+#contenidoSomos{
+
+    grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    
+
+    aside{
+         
+            video{
+                border: 4px inset $primary;
+                width: 80%;
+                
+             }
+    
+}
+
+article{
+    #descripcion{
+        border: 4px inset $primary;
+        margin-top: 1%;
+        margin-bottom: 4%;
+        background-color: rgba(255, 255, 255, 0.678);
+    }
+}
+
+}
+
+footer{
+    grid-area: footer;
+}
+
+@media (min-width: 626px) and (max-width: 649px){
+    #landingSomos{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+        "header"
+        "nav" 
+        "h2" 
+        "contenido" 
+        "footer";
+    }
+
+    #contenidoSomos{
+
+        grid-area: contenido;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    
+        aside{
+             
+                video{
+                    border: 4px inset $primary;
+                    width: 80%;
+                    
+                 }
+        
+    }
+    
+    article{
+        #descripcion{
+            border: 4px inset $primary;
+            margin-top: 1%;
+            margin-bottom: 4%;
+            background-color: rgba(255, 255, 255, 0.678);
+        }
+    }
+    
+    }
+
+   
+
+}
+
+@media (min-width: 650px) and (max-width: 768px){
+    #landingSomos{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+        "header"
+        "nav" 
+        "h2" 
+        "contenido" 
+        "footer";
+    }
+
+    #contenidoSomos{
+
+        grid-area: contenido;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    
+        aside{
+             
+                video{
+                    border: 4px inset $primary;
+                    width: 80%;
+                    
+                 }
+        
+    }
+    
+    article{
+        #descripcion{
+            border: 4px inset $primary;
+            margin-top: 1%;
+            margin-bottom: 4%;
+            background-color: rgba(255, 255, 255, 0.678);
+        }
+    }
+    
+    }
+
+   
+
+
+}
+
+@media (min-width: 769px) and (max-width: 993px){
+    #landingSomos{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+        "header"
+        "nav" 
+        "h2" 
+        "contenido" 
+        "footer";
+    }
+
+    #contenidoSomos{
+
+        grid-area: contenido;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    
+        aside{
+             
+                video{
+                    border: 4px inset $primary;
+                    width: 80%;
+                    
+                 }
+        
+    }
+    
+    article{
+        #descripcion{
+            border: 4px inset $primary;
+            margin-top: 1%;
+            margin-bottom: 4%;
+            background-color: rgba(255, 255, 255, 0.678);
+        }
+    }
+    
+    }
+
+   
+
+
+}
+
+@media (min-width: 994px) and (max-width: 1199px){
+        #landingSomos{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+            "header"
+            "nav" 
+            "h2" 
+            "contenido" 
+            "footer";
+        }
+
+        #contenidoSomos{
+
+            grid-area: contenido;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        
+            aside{
+                 
+                    video{
+                        border: 4px inset $primary;
+                        width: 80%;
+                        
+                     }
+            
+        }
+        
+        article{
+            #descripcion{
+                border: 4px inset $primary;
+                margin-top: 1%;
+                margin-bottom: 4%;
+                height: 450px;
+                background-color: rgba(255, 255, 255, 0.678);
+            }
+        }
+        
+        }
+
+
+    }
+
+    @media (min-width: 1200px) and (max-width: 1499px){
+        
+        h2{
+            font-size: 30px;
+        }
+    
+        header{
+            h1{
+                font-size: 40px;
+             }
+        }
+        
+        h5.card-title{
+            font-size: 22px;
+        }
+    
+        p.card-text{
+            font-size: 18px;
+        }
+    
+        li.list-group-item{
+            font-size: 22px;
+        }
+
+        #landingSomos{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto 8%;
+        grid-template-areas: 
+            "header"
+            "nav" 
+            "h2" 
+            "contenido" 
+            "footer";
+        }
+    
+        #contenidoSomos{
+    
+            grid-area: contenido;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        
+            aside{
+                 
+                    video{
+                        border: 4px inset $primary;
+                        width: 80%;
+                        margin-bottom: 10%;
+                        
+                     }
+            
+        }
+        
+        article{
+            #descripcion{
+                border: 4px inset $primary;
+                margin-top: 1%;
+                margin-bottom: 4%;
+                height: 500px;
+                font-size: 23px;
+                background-color: rgba(255, 255, 255, 0.678);
+
+            }
+        }
+        
+        }
+        
+        body{
+            font-size: 20px
+        };
+        
+        .animacion{
+            font-size: 35px !important;
+        }
+    }
+
+
+
+@media (min-width: 1500px) and (max-width: 1799px){
+    
+    h2{
+        font-size: 45px;
+    }
+
+    header{
+        h1{
+            font-size: 60px;
+         }
+    }
+    
+    h5.card-title{
+        font-size: 25px;
+    }
+
+    p.card-text{
+        font-size: 18px;
+    }
+
+    li.list-group-item{
+        font-size: 22px;
+    }
+
+    #landingSomos{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto 8%;
+    grid-template-areas: 
+        "header"
+        "nav" 
+        "h2" 
+        "contenido" 
+        "footer";
+    }
+
+    #contenidoSomos{
+
+        grid-area: contenido;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    
+        aside{
+             
+                video{
+                    border: 4px inset $primary;
+                    width: 80%;
+                    margin-bottom: 10%;
+                    
+                 }
+        
+    }
+    
+    article{
+        #descripcion{
+            border: 4px inset $primary;
+            margin-top: 1%;
+            margin-bottom: 4%;
+            font-size: 25px;
+            background-color: rgba(255, 255, 255, 0.678);
+           
+        }
+    }
+    
+    }
+    
+    body{
+        font-size: 25px;
+    }
+
+}
+
+@media (min-width: 1800px) and (max-width: 2000px){
+    
+    h2{
+        font-size: 40px;
+    }
+
+    header{
+        h1{
+            font-size: 60px;
+         }
+    }
+    
+    h5.card-title{
+        font-size: 25px;
+    }
+
+    p.card-text{
+        font-size: 20px;
+    }
+
+    li.list-group-item{
+        font-size: 25px;
+    }
+
+    #landingSomos{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto 8%;
+    grid-template-areas: 
+        "header"
+        "nav" 
+        "h2" 
+        "contenido" 
+        "footer";
+    }
+
+    #contenidoSomos{
+
+        grid-area: contenido;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    
+        aside{
+             
+                video{
+                    border: 4px inset $primary;
+                    width: 80%;
+                    margin-bottom: 10%;
+                    
+                 }
+        
+    }
+    
+    article{
+        #descripcion{
+            border: 4px inset $primary;
+            margin-top: 1%;
+            margin-bottom: 4%;
+            font-size: 30px;
+            background-color: rgba(255, 255, 255, 0.678);
+           
+        }
+    }
+    
+    }
+    
+    body{
+        font-size: 30px;
+        
+    }
+
+    .animacion{
+        font-size: 40px !important;
+    }
+    
+
+}
+
+@media (min-width: 2001px) {
+    
+    h2{
+        font-size: 40px;
+    }
+
+    header{
+        h1{
+            font-size: 60px;
+         }
+    }
+    
+    #landingSomos{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto 8%;
+    grid-template-areas: 
+        "header"
+        "nav" 
+        "h2" 
+        "contenido" 
+        "footer";
+    }
+
+    #contenidoSomos{
+
+        grid-area: contenido;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    
+        aside{
+             
+                video{
+                    border: 4px inset $primary;
+                    width: 80%;
+                    margin-bottom: 10%;
+                    
+                 }
+        
+    }
+    
+    article{
+        #descripcion{
+            border: 4px inset $primary;
+            margin-top: 1%;
+            margin-bottom: 4%;
+            font-size: 30px;
+            background-color: rgba(255, 255, 255, 0.678);
+           
+        }
+    }
+    
+    }
+    
+    body{
+        font-size: 30px;
+       
+    }
+
+    
+
+}
